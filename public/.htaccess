@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+  <IfModule mod_negotiation.c>
+      Options -MultiViews
+  </IfModule>
+
+  RewriteEngine On
+  # Send would-be 404 requests to Craft
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !^/(favicon\.ico|apple-touch-icon.*\.png)$ [NC]
+  RewriteRule (.+) index.php?p=$1 [QSA,L]
+
+
+      Header set Access-Control-Allow-Origin "*"
+      Header set Access-Control-Allow-Headers "origin, x-requested-with, content-type"
+      Header set Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"
+
+</IfModule>

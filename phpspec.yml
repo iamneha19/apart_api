@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: ApartmentApi
+        psr4_prefix: ApartmentApi
+        src_path: app

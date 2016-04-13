@@ -1,0 +1,17 @@
+{
+    "name": "synergy/repository",
+    "description": "Repository Lawyer over model",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohammed Mudasir",
+            "email": "mohammed.mudasir@sts.in"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Repository\\": "src"
+        }
+    },
+    "require": {}
+}

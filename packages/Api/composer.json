@@ -1,0 +1,17 @@
+{
+    "name": "synergy/api",
+    "description": "Api package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohammed Mudasir",
+            "email": "mohammed.mudasir@sts.in"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Api\\": "src/"
+        }
+    },
+    "require": {}
+}

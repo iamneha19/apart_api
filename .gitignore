@@ -1,0 +1,12 @@
+/vendor
+/node_modules
+.env
+/nbproject/private/
+composer.lock
+/public/uploads/*
+.settings
+.project
+.buildpath
+composer.phar
+/nbproject
+!/public/uploads/index.html
